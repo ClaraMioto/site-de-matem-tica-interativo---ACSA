@@ -1,12 +1,12 @@
 // Variáveis principais do jogo
-let respostaCorreta
+let respostaCorreta;
 let pontuacao = 0;
 let modoAtual = 'basico';
 
 // Função que inicia o jogo com o modo escolhido
 function iniciarJogo(modo) {
     modoAtual = modo;
-    document. getElementById("area-jogo"). style.display = "block";
+    document. getElementById("area-jogo").style.display = "block";
     novaPergunta();
 }
 
@@ -25,18 +25,18 @@ function novaPergunta() {
 
 // Gera números aleatórios, maiores no modo dasafio
 function gerarNumeros(modo) {
-    let num1 = Math.floor(Math.random)() = 10) + 1;
-    let num2 = Math.floor(Math.random0() = 10) + 1;
+    let num1 = Math.floor(Math.random() * 10); +1;
+    let num2 = Math.floor(Math.random0() * 10) + 1;
 
     if (modo === 'desafio') {
-        num1 "= 2;
-        num2 "= 3;
+        num1 *= 2;
+        num2 *= 3;
     }
 
     return { num1, num2 };
 }
 
-// Escolhe aleatoriamente uma operação: +, - ou"
+// Escolhe aleatoriamente uma operação: +, - ou *
 function escolherOperacao() {
     const operacoes = ['+','-','*'];
     return operacoes[Math.floor(Math.random() * operacoes.length)];
@@ -47,7 +47,7 @@ function calcularRespostas(n1, n2, op) {
     switch (op) {
         case '+': return n1 + n2;
         case '-': return n1 - n2;
-        case '*': return n1 " n2;
+        case '*': return n1 * n2;
     }
 }
 

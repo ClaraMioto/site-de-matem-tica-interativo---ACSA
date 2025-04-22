@@ -38,8 +38,8 @@ function gerarNumeros(modo) {
 
 // Escolhe aleatoriamente uma operação: +, - ou"
 function escolherOperacao() {
-    const operacoes = ['+','-','"'];
-    return operacoes[Math.floor(Math.random() " operacoes.length)];
+    const operacoes = ['+','-','*'];
+    return operacoes[Math.floor(Math.random() * operacoes.length)];
 }
 
 // Calcula o resultado com base nos números e operações
@@ -47,7 +47,7 @@ function calcularRespostas(n1, n2, op) {
     switch (op) {
         case '+': return n1 + n2;
         case '-': return n1 - n2;
-        case '"': return n1 " n2;
+        case '*': return n1 " n2;
     }
 }
 

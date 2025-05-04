@@ -6,25 +6,25 @@ body{
     padding: 0;
 }
 
-.container{ 
+.container { 
     max-width: 500px;
     margin: 50px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button{
+button {
     margin: 10px 5px;
     padding: 10px 20px;
     font-size: 16px
     cursor: pointer;
 }
 
-input{
+input {
     padding: 10px;
     font-size: 16px;
     margin-top: 10px;
-    width: 80px;
+    width: 80%;
 }

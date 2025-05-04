@@ -25,8 +25,8 @@ function novaPergunta() {
 
 // Gera números aleatórios, maiores no modo dasafio
 function gerarNumeros(modo) {
-    let num1 = Math.floor(Math.random() * 10); +1;
-    let num2 = Math.floor(Math.random0() * 10) + 1;
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
 
     if (modo === 'desafio') {
         num1 *= 2;
@@ -60,7 +60,7 @@ function verificarResposta() {
         pontuacao += 10;
     } else {
         document.getElementById("resultado"). innerText = 'Errado! A resposta era ${respostaCorreta}';
-        pontuacao -5;
+        pontuacao -=5;
     }
 
     document.getElementById("pontuacao").innerText = pontuacao;
